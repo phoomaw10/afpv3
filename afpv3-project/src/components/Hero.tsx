@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="xl:col-span-2 xl:row-start-1 xl:row-end-[-1] relative">
           <img
             className="w-full h-full object-cover rounded-lg"
-            src="/banner1.png"
+            src="/banner1.jpg"
             alt="hero image"
           />
           <div className="absolute max-w-[470px] sm:ml-16 ml-8 top-[50%] -translate-y-[50%] sm:space-y-4">
