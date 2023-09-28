@@ -1,13 +1,14 @@
 import ProductCard from "./ProductCard";
 
 const data = [
-  { id: 0, name: "Kit-Cat", price: "250 baht", img: "/food1.png" },
-  { id: 0, name: "Kit-Cat", price: "250 baht", img: "/food1.png" },
-  { id: 0, name: "Kit-Cat", price: "250 baht", img: "/food1.png" },
-  { id: 0, name: "Kit-Cat", price: "250 baht", img: "/food1.png" },
+  { id: 0, name: "Speedy Mouse", price: "130 baht", img: "/spmu.jpeg" },
+  { id: 1, name: "Cat Nip", price: "320 baht", img: "/catnip.jpeg" },
+  { id: 2, name: "Electronic Toilet", price: "2,450 baht", img: "/cattoi.jpg" },
+  { id: 3, name: "Kitty Potion Shampoo", price: "370 baht", img: "/kipo.jpeg" },
+  { id: 4, name: "Kit-Cat", price: "250 baht", img: "/food1.png" },
 ];
 
-const FeatureSectionFruits = () => {
+const FlashSale = () => {
   return (
     <div className="container pt-16">
       <div className="lg:flex justify-between items-center">
@@ -32,4 +33,4 @@ const FeatureSectionFruits = () => {
   );
 };
 
-export default FeatureSectionFruits;
+export default FlashSale;

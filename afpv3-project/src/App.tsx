@@ -2,7 +2,7 @@ import MobNavbar from "./components/MobNavbar";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Category from "./components/Category";
-import FeatureSectionFruits from "./components/FeatureSectionFruits";
+import FlashSale from "./components/FlashSale";
 import { CartContextProvider } from "./context/cartContext";
 import { useState } from "react";
 import Cart from "./components/Cart";
@@ -18,7 +18,7 @@ const App = () => {
         <MobNavbar setShowCart={setShowCart}/>
         <Hero />
         <Category />
-        <FeatureSectionFruits />
+        <FlashSale />
         {showCart && <Cart showCart={showCart} setShowCart={setShowCart}/>}
         <Footer />
       </main>
