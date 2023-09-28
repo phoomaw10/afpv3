@@ -1,11 +1,41 @@
-import ProductCard from "./ProductCard";
+import FlashSaleProductCard from "./FlashSaleProductCard";
 
 const data = [
-  { id: 0, name: "Speedy Mouse", price: "130 baht", img: "/spmu.jpeg" },
-  { id: 1, name: "Cat Nip", price: "320 baht", img: "/catnip.jpeg" },
-  { id: 2, name: "Electronic Toilet", price: "2,450 baht", img: "/cattoi.jpg" },
-  { id: 3, name: "Kitty Potion Shampoo", price: "370 baht", img: "/kipo.jpeg" },
-  { id: 4, name: "Kit-Cat", price: "250 baht", img: "/food1.png" },
+  {
+    id: 0,
+    name: "Speedy Mouse",
+    newprice: "130 baht",
+    oldprice: "150 baht",
+    img: "/spmu.jpeg",
+  },
+  {
+    id: 1,
+    name: "Cat Nip",
+    newprice: "320 baht",
+    oldprice: "290 baht",
+    img: "/catnip.jpeg",
+  },
+  {
+    id: 2,
+    name: "Electronic Toilet",
+    newprice: "2,450 baht",
+    oldprice: "2,250 baht",
+    img: "/cattoi.jpg",
+  },
+  {
+    id: 3,
+    name: "Kitty Potion Shampoo",
+    newprice: "370 baht",
+    oldprice: "350 baht",
+    img: "/kipo.jpeg",
+  },
+  {
+    id: 4,
+    name: "Kit-Cat",
+    newprice: "250 baht",
+    oldprice: "240 baht",
+    img: "/food1.png",
+  },
 ];
 
 const FlashSale = () => {
@@ -21,11 +51,12 @@ const FlashSale = () => {
       </div>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {data.map((el) => (
-          <ProductCard
+          <FlashSaleProductCard
             key={el.id}
             img={el.img}
             name={el.name}
-            price={el.price}
+            newprice={el.newprice}
+            oldprice={el.oldprice}
           />
         ))}
       </div>

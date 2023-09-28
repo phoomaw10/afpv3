@@ -7,21 +7,26 @@ import { CartContextProvider } from "./context/cartContext";
 import { useState } from "react";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AllProduct from "./components/AllProduct";
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
 
   return (
     <CartContextProvider>
-      <main>
-        <Navbar setShowCart={setShowCart}/>
-        <MobNavbar setShowCart={setShowCart}/>
+      <Router>
+        <Navbar setShowCart={setShowCart} />
+        <MobNavbar setShowCart={setShowCart} />
         <Hero />
         <Category />
         <FlashSale />
-        {showCart && <Cart showCart={showCart} setShowCart={setShowCart}/>}
+        {showCart && <Cart showCart={showCart} setShowCart={setShowCart} />}
         <Footer />
-      </main>
+        <Routes>
+          <Route path="/allproduct" element={<AllProduct />} />
+        </Routes>
+      </Router>
     </CartContextProvider>
   );
 };

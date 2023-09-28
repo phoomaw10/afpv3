@@ -2,9 +2,9 @@ import CategoryCard from "./CategoryCard";
 
 const data = [
   { id: 0, name: "Food", count: "9 Products", img: "/cate1.png" },
-  { id: 1, name: "Toy", count: "8 Products", img: "/cate1.png" },
+  { id: 1, name: "Toy", count: "6 Products", img: "/cate1.png" },
   { id: 2, name: "Accessories", count: "10 Products", img: "/cate1.png" },
-  { id: 3, name: "Other", count: "10 Products", img: "/cate1.png" },
+  { id: 3, name: "Other", count: "30 Products", img: "/cate1.png" },
 ];
 
 const Category = () => {

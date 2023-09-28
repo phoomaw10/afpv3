@@ -1,5 +1,10 @@
 import { BsSearch } from "react-icons/bs";
-import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
+import {
+  AiOutlineUser,
+  AiOutlineShoppingCart,
+  AiOutlineShop,
+} from "react-icons/ai";
+import { LiaAddressCard } from "react-icons/lia"
 import CartCountBadge from "./CartCountBadge";
 
 const Navbar = ({ setShowCart }: any) => {
@@ -20,8 +25,14 @@ const Navbar = ({ setShowCart }: any) => {
             />
           </div>
           <div className="flex gap-4">
-            <div className="icon__wrapper">
+            <div className="icon__wrapper relative cursor-pointer">
               <AiOutlineUser />
+            </div>
+            <div className="icon__wrapper relative cursor-pointer">
+              <AiOutlineShop />
+            </div>
+            <div className="icon__wrapper relative cursor-pointer">
+              <LiaAddressCard />
             </div>
             <div
               className="icon__wrapper relative cursor-pointer"
